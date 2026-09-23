@@ -1,0 +1,6 @@
+{
+  "network_prefix": "192.0.2",
+  "host_offset": 1,
+  "port": 1515,
+  "panel_count": 18
+}
