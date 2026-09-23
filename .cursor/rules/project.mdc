@@ -1,0 +1,14 @@
+---
+description: Project-wide guidance for the Samsung Controller repository
+alwaysApply: true
+---
+
+# Samsung Controller project rules
+
+- First inspect the repository and determine its actual stack before editing files.
+- Follow existing project conventions for naming, structure, dependencies, formatting, and error handling.
+- Make the smallest complete change that satisfies the request.
+- Do not add secrets or hard-code device credentials, IP addresses, tokens, or personal data.
+- Keep device communication reliable: handle timeouts, connection failures, malformed responses, and retries explicitly where applicable.
+- Add or update tests for non-trivial behavior and run the available formatter, linter, build, and test checks before finalizing.
+- Do not claim a check passed unless it was actually run; report unavailable tooling clearly.
