@@ -12,3 +12,4 @@ alwaysApply: true
 - Keep device communication reliable: handle timeouts, connection failures, malformed responses, and retries explicitly where applicable.
 - Add or update tests for non-trivial behavior and run the available formatter, linter, build, and test checks before finalizing.
 - Do not claim a check passed unless it was actually run; report unavailable tooling clearly.
+- After a change request, commit, push, and merge to `main` without asking. If opening a pull request fails with a collaborator or pull-request permission error, merge the feature branch into `main` and push `main`. Do not force-push.
