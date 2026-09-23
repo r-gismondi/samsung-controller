@@ -47,6 +47,17 @@ A timeout or a closed socket marks that panel offline and leaves the others runn
 
 Picture brightness `0x25` is not the backlight control. White balance, gamma, MagicInfo, ticker, the virtual remote, and Tizen apps are out of the first screen.
 
+## Live read-only probe
+
+The cloud agent cannot open the panel network. Run this on a machine that can reach the sets, after copying `config/panels.example.json` to `config/panels.json` and setting `network_prefix` there.
+
+```bash
+python3 -m samsung_controller.probe --panels 1
+python3 -m samsung_controller.probe --output results/probe.json
+```
+
+The probe only sends get-commands: device id, model, status, backlight, and panel power. It does not change power, backlight, input, or wall layout. `results/` is gitignored.
+
 ## Check
 
 ```bash
